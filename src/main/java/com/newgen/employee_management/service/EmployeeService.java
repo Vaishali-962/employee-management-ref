@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 import java.util.List;
 
 public interface EmployeeService {
-    EmployeeDto createEmployee(EmployeeRequestDto employee);
+    EmployeeDto createEmployee(EmployeeRequestDto employeeRequestDto);
 
     List<EmployeeDto> getAllEmployees();
 
