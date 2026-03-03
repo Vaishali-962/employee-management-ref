@@ -21,8 +21,8 @@ public class EmployeeController {
 
     /* CREATING DATA ON SERVER */
     @PostMapping
-    public ResponseEntity<EmployeeDto> createEmployee(@RequestBody @Valid EmployeeRequestDto employeeRequestDto) {
-        EmployeeDto emp = employeeService.createEmployee(employeeRequestDto);
+    public ResponseEntity<EmployeeDto> createEmployee(@RequestBody @Valid EmployeeRequestDto employee) {
+        EmployeeDto emp = employeeService.createEmployee(employee);
         return ResponseEntity.status(HttpStatus.CREATED).body(emp);
     }
 
